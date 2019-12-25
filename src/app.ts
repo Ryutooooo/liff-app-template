@@ -20,7 +20,7 @@ export default async () => {
 
     const image = document.getElementById('map');
     image.addEventListener("click", () => liff.sendMessages([
-      { type:"text", text:"このプランにする" }
+      { type:"text", text:"このプランにする." }
     ]));
 
     image.addEventListener("click", function() {
