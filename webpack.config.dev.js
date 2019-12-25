@@ -8,6 +8,7 @@ const config = merge(baseConfig, {
     https: true,
     contentBase: './dist',
     port: 9443,
+    disableHostCheck: true
   },
   resolve: {
     extensions: ['.ts', '.js']
