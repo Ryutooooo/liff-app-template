@@ -19,8 +19,16 @@ export default async () => {
      */
 
     const image = document.getElementById('map');
+    document.getElementById('success').style.display = "none";
+    const complete = document.getElementById('success')
 
-    image.addEventListener("click", function() {
+    map.addEventListener("click", function() {
+      image.style.display = "none";
+      complete.style.display = "block";
+    });
+
+    complete.addEventListener("click", function() {
+      liff.sendMessages([ { type:"text", text:"LINE認証完了" } ]);
       liff.closeWindow();
     });
   }
