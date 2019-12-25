@@ -20,7 +20,7 @@ export default async () => {
 
     const image = document.getElementById('map');
     image.addEventListener("click", () => liff.sendMessages([
-      { type:"text", text:"現在地から近いホテル一覧" }
+      { type:"text", text:"現在地から近いホテル一覧." }
     ]));
 
     image.addEventListener("click", function() {
